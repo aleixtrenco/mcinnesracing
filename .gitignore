@@ -1,0 +1,11 @@
+# Built files
+alex-mcinnes-preview.html
+*.zip
+
+# Test output
+dev/out/
+
+# Local installs
+node_modules/
+__pycache__/
+.DS_Store
