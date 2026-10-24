@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Off the route | Alex McInnes Racing</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0D0A07">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    @font-face { font-family: "Saira"; src: url("/assets/fonts/saira-italic-display.woff2") format("woff2"); font-style: italic; font-weight: 700 900; font-display: swap; }
+    @font-face { font-family: "Archivo"; src: url("/assets/fonts/archivo-text.woff2") format("woff2"); font-weight: 400 800; font-display: swap; }
+    :root { --night: #0D0A07; --plate: #F6F3EE; --haze: #E4DDD1; --red: #C9231B; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: grid; place-items: center; padding: 24px 16px;
+      background: var(--night); color: var(--plate);
+      font: 400 1.0625rem/1.55 "Archivo", system-ui, sans-serif; text-align: center;
+    }
+    .num { margin: 0; max-width: none; color: var(--plate); opacity: 1; font: italic 900 clamp(6rem, 28vw, 14rem)/0.85 "Saira", system-ui, sans-serif; letter-spacing: -0.02em; }
+    .num span { color: var(--red); }
+    h1 { margin: 1.25rem 0 0.5rem; font: italic 900 clamp(1.6rem, 6vw, 2.6rem)/1 "Saira", system-ui, sans-serif; text-transform: uppercase; }
+    p { margin: 0 auto; max-width: 30em; color: var(--haze); opacity: 0.8; }
+    a {
+      display: inline-block; margin-top: 2rem; padding: 0.9rem 1.6rem;
+      background: var(--red); color: var(--plate); text-decoration: none;
+      font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.875rem;
+    }
+    a:hover, a:focus-visible { background: var(--plate); color: var(--night); }
+    a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="num" aria-hidden="true">4<span>0</span>4</p>
+    <h1>Off the route</h1>
+    <p>This page isn't on the roadbook. Head back to the start and pick up the trail.</p>
+    <a href="/">Back to Alex McInnes Racing</a>
+  </main>
+</body>
+</html>

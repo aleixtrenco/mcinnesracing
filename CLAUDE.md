@@ -26,6 +26,7 @@ far, so you don't need the earlier conversations.
 | `alex-mcinnes-site/index.html` | All copy, in page order |
 | `alex-mcinnes-site/assets/css/site.css` | Design tokens and all styles |
 | `alex-mcinnes-site/assets/js/site.js` | Hero sequence, stacking, reveals, counters, ticker, countdowns, menu, in-page links, presenter mode |
+| `alex-mcinnes-site/_redirects`, `404.html` | Netlify answers `source-images/`, `tools/` and `README.md` with the 404 page (they stay in the folder for the image pipeline). Any new private file in the site folder needs a line here. |
 | `alex-mcinnes-site/tools/make-images.py` | Builds every photo size (AVIF/WebP/JPEG), the share image and blur placeholders from `source-images/` |
 | `dev/` | Test and preview tools (not deployed). See `dev/README.md`. |
 | `dev/assets/` | Scripts that made the textures, fonts and logos |

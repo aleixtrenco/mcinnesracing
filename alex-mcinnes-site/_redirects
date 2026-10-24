@@ -1,0 +1,6 @@
+# Netlify: keep the working files out of the public site.
+# They stay in the folder because tools/make-images.py builds from them.
+/source-images/*  /404.html  404!
+/tools/*          /404.html  404!
+/README.md        /404.html  404!
+/_redirects       /404.html  404!

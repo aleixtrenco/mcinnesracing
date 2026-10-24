@@ -30,6 +30,12 @@ Any static host works:
 - **Vercel, Cloudflare Pages, GitHub Pages:** point the project at this folder
 - **Existing web hosting (cPanel and similar):** upload the folder's contents to the web root
 
+`source-images/`, `tools/` and this README stay in the folder because the image
+pipeline needs them, but visitors shouldn't see them. On Netlify the
+`_redirects` file answers those paths with the "Off the route" page
+(`404.html`, also shown for any address that doesn't exist). On any other host,
+leave those three out of the upload or block them there.
+
 The site assumes it will live at `https://mcinnesracing.com/` (the domain in the
 deck's email address). If it goes somewhere else, replace that address in
 `index.html` (canonical link, `og:url`, `og:image`, the JSON-LD block),
@@ -305,6 +311,8 @@ All copy is in `index.html`, in page order. Things that will need updating:
 | `tools/make-images.py` | Image pipeline |
 | `favicon.svg`, `apple-touch-icon.png`, `og-image.jpg` | Browser icon (the race plate), home-screen icon, share image |
 | `robots.txt`, `sitemap.xml` | Search engine files |
+| `404.html` | "Off the route" page for addresses that don't exist |
+| `_redirects` | Netlify rules that keep `source-images/`, `tools/` and this README private |
 
 ## Design notes
 
