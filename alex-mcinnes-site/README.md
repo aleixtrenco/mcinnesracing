@@ -304,7 +304,8 @@ All copy is in `index.html`, in page order. Things that will need updating:
 | `source-images/` | Original photos that `tools/make-images.py` builds from |
 | `tools/make-images.py` | Image pipeline |
 | `favicon.svg`, `apple-touch-icon.png`, `og-image.jpg` | Browser icon (the race plate), home-screen icon, share image |
-| `robots.txt`, `sitemap.xml` | Search engine files |
+| `robots.txt`, `sitemap.xml` | Search engine files (update `lastmod` in the sitemap when the page changes) |
+| `_redirects` | Netlify rule that sends the old `heartfelt-lily-8e8080.netlify.app` address to mcinnesracing.com |
 
 ## Design notes
 

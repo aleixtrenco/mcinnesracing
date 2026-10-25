@@ -1,0 +1,2 @@
+# Send the Netlify subdomain to the real domain so Google sees one site
+https://heartfelt-lily-8e8080.netlify.app/* https://mcinnesracing.com/:splat 301!

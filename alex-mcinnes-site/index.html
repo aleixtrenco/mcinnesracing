@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Alex McInnes | Rally-raid rider from Dubai, racing for Dakar 2027</title>
-  <meta name="description" content="Alex McInnes is a 22-year-old rally-raid motorbike rider based in Dubai, the 2025 UAE and Qatar national rally champion, racing toward the 2027 Dakar Rally. Partnership enquiries welcome.">
+  <title>Alex McInnes | Dubai rally-raid rider racing Dakar 2027</title>
+  <meta name="description" content="Alex McInnes, 22, is a Dubai-based rally-raid rider, 2025 UAE and Qatar national champion, racing for Dakar 2027. Partnership enquiries welcome.">
   <link rel="canonical" href="https://mcinnesracing.com/">
   <meta name="theme-color" content="#1C1611">
 
@@ -57,15 +57,33 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alex McInnes",
-    "jobTitle": "Professional rally-raid motorbike rider",
-    "birthPlace": { "@type": "Place", "name": "Scotland" },
-    "homeLocation": { "@type": "Place", "name": "Dubai, United Arab Emirates" },
-    "url": "https://mcinnesracing.com/",
-    "email": "mailto:partnerships@mcinnesracing.com",
-    "award": ["UAE National Rally Champion 2025", "Qatar National Rally Champion 2025"],
-    "sameAs": ["https://www.instagram.com/amcinnes_21/"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mcinnesracing.com/#website",
+        "name": "Alex McInnes Racing",
+        "alternateName": "McInnes Racing",
+        "url": "https://mcinnesracing.com/",
+        "inLanguage": "en-GB",
+        "about": { "@id": "https://mcinnesracing.com/#alex" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mcinnesracing.com/#alex",
+        "name": "Alex McInnes",
+        "jobTitle": "Professional rally-raid motorbike rider",
+        "description": "Scottish rally-raid motorbike rider, race number 21, based in Dubai. 2025 UAE and Qatar national rally champion, racing for a finish at the 2027 Dakar Rally.",
+        "image": "https://mcinnesracing.com/og-image.jpg",
+        "nationality": { "@type": "Country", "name": "United Kingdom" },
+        "birthPlace": { "@type": "Place", "name": "Scotland" },
+        "homeLocation": { "@type": "Place", "name": "Dubai, United Arab Emirates" },
+        "knowsAbout": ["Rally raid", "Motorcycle racing", "Dakar Rally", "FIM Bajas World Cup"],
+        "url": "https://mcinnesracing.com/",
+        "email": "mailto:partnerships@mcinnesracing.com",
+        "award": ["UAE National Rally Champion 2025", "Qatar National Rally Champion 2025"],
+        "sameAs": ["https://www.instagram.com/amcinnes_21/"]
+      }
+    ]
   }
   </script>
   <script>var d=document.documentElement;d.classList.add("js");d.classList.add(matchMedia("(prefers-reduced-motion: reduce)").matches?"calm":"motion");try{var q=location.search;if(/[?&]team=off\b/.test(q))localStorage.removeItem("mcinnes-team");else if(/[?&]team\b/.test(q))localStorage.setItem("mcinnes-team","1");if(localStorage.getItem("mcinnes-team"))d.classList.add("team");if(/[?&]team\b/.test(q))history.replaceState(null,"",location.pathname+location.hash)}catch(e){}</script>
